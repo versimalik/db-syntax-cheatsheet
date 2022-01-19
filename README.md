@@ -53,3 +53,16 @@ ON UPDATE CASCADE
 ON DELETE NO ACTION
 ;
 ```
+## menampilkan seluruh freign key yang sudah dibuat beserta keterangannya
+```sql
+SELECT 
+  TABLE_NAME AS `Nama Table`,
+  COLUMN_NAME AS `Nama Column`,
+  CONSTRAINT_NAME AS `Nama Constraint`
+  REFERENCED_TABLE_NAME AS `Table Sumber`
+  REFERENCED_COLUMN_NAME AS `Column Sumber`
+FROM
+  INFORMATION_SCHEMA.KEY_COLUMN_USAGE
+WHERE
+  REFERENCED_TABLE_SCHEMA = nama_database;
+```
