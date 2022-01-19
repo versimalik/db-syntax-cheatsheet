@@ -5,9 +5,13 @@
 ```sh
 mysql -u root -p
 ```
-
 > sesuikan dengan user pada sistem
+---
 
+## melihat daftar database dalam database server
+```sql
+SHOW DATABASES;
+```
 ---
 ## membuat database
 ```sql
@@ -19,6 +23,10 @@ CREATE DATABASE nama_database;
 USE nama_database;
 ```
 ---
+## melihat daftar table dalam database
+```sql
+SHOW TABLES;
+```
 ## membuat table
 ```sql
 CREATE TABLE nama_table(
@@ -28,6 +36,11 @@ CREATE TABLE nama_table(
     . . . . . 
     PRIMARY KEY (column)   
 );
+```
+---
+## melihat deskripsi atau struktur table yang sudah dibuat
+```sql
+DESC nama_table;
 ```
 ---
 ## menambahkan constraint foreign key untuk table yang sudah jadi
