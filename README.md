@@ -1,4 +1,4 @@
-# Database Syntax Cheatsheet
+# MySQL Database Syntax Cheatsheet
 
 
 ## login ke mysql
@@ -53,6 +53,7 @@ ON UPDATE CASCADE
 ON DELETE NO ACTION
 ;
 ```
+---
 ## menampilkan seluruh freign key yang sudah dibuat beserta keterangannya
 ```sql
 SELECT 
