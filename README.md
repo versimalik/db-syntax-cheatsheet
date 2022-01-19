@@ -46,7 +46,7 @@ DESC nama_table;
 ## menambahkan constraint foreign key untuk table yang sudah jadi
 ```sql
 ALTER TABLE nama_table_child
-ADD CONSTRAINT nama_foreign_key
+ADD CONSTRAINT fk_tableChild_columnChild
 FOREIGN KEY(column_table_child)
 REFERENCES nama_table_parent (column_table_parent)
 ON UPDATE CASCADE
