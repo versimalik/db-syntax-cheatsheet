@@ -5,7 +5,7 @@
 ```sh
 mysql -u root -p
 ```
-> sesuikan dengan user pada sistem
+> :memo: sesuikan dengan user pada sistem
 ---
 
 ## melihat daftar database dalam database server
