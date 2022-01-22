@@ -65,10 +65,5 @@ SELECT
 FROM
   INFORMATION_SCHEMA.KEY_COLUMN_USAGE
 WHERE
-<<<<<<< HEAD
-  REFERENCED_TABLE_SCHEMA = nama_database;
-```
-=======
   REFERENCED_TABLE_SCHEMA = 'nama_database';
 ```
->>>>>>> 1d108b0 (perbaiki line akhir)
