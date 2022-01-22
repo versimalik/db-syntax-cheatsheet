@@ -59,11 +59,16 @@ ON DELETE NO ACTION
 SELECT 
   TABLE_NAME AS `Nama Table`,
   COLUMN_NAME AS `Nama Column`,
-  CONSTRAINT_NAME AS `Nama Constraint`
-  REFERENCED_TABLE_NAME AS `Table Sumber`
+  CONSTRAINT_NAME AS `Nama Constraint`,
+  REFERENCED_TABLE_NAME AS `Table Sumber`,
   REFERENCED_COLUMN_NAME AS `Column Sumber`
 FROM
   INFORMATION_SCHEMA.KEY_COLUMN_USAGE
 WHERE
+<<<<<<< HEAD
   REFERENCED_TABLE_SCHEMA = nama_database;
 ```
+=======
+  REFERENCED_TABLE_SCHEMA = 'nama_database';
+```
+>>>>>>> 1d108b0 (perbaiki line akhir)
